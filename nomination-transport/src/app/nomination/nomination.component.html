@@ -1,0 +1,22 @@
+{{Nomination}}
+<table>
+  <tr>
+    <th>Nomination ID</th>
+    <th>FromLocation </th>
+    <th>ToLocation </th>
+    <th>Prouct </th>
+    <th>Volume </th>
+    <th>StartDate </th>
+    <th>EndDate </th>
+  </tr>
+  <tr *ngFor= "let list of nomdataList" >
+    <td>{{ list.NominationId }} </td>
+    <td>Houston</td>
+    <td>Dallas</td>
+    <td>gasoline</td>
+    <td>10000</td>
+    <td>1/1/2017</td>
+    <td>12/31/2017</td>
+  </tr>
+  
+</table>

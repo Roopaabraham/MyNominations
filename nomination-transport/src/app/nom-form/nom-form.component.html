@@ -1,0 +1,66 @@
+<div class="container">
+
+    <h1>Nomination-Form</h1>
+
+    <form #nomForm ="ngForm">
+      <div class="form-group">
+      <label for="nominationid">NominationID </label>
+      <input type="number" class="form-control" id="nominationid" required
+      [(ngModel)]="model.nominationid" name="nominationid" #name="ngModel">
+      <div [hidden]="name.valid || name.pristine"
+     class="alert alert-danger">
+     NominationID is required
+    </div>
+    </div>
+
+      <div class="form-group">
+        <label for="fromLocation"> FromLocation</label>
+        <input type ="text" class="form-control" id="fromLocation" required
+        [(ngModel)]="model.fromLocation" name="fromLocation">
+      </div>
+
+      <div class="form-group">
+        <label for="toLocation">ToLocation</label>
+        <input type ="text" class="form-control" id="toLocation" required
+        [(ngModel)]="model.toLocation" name="toLocation">
+       
+      </div>
+
+      <div class="form-group">
+      <label for="product">Product </label>
+      <input type = "text" class="form-control" id="product" required 
+      [(ngModel)]="model.product" name="product">
+     
+      </div>
+
+      <div class="form-group">
+          <label for="volume">Volume </label>
+          <input type = "number" class="form-control" id="volume" required 
+          [(ngModel)]="model.volume" name="volume">
+      
+          </div>
+
+          <div class="form-group">
+              <label for="startDate">StartDate </label>
+              <input type = "date" class="form-control" id="startDate" required 
+              [(ngModel)]="model.startDate" name="startDate">
+       
+              </div>
+
+              <div class="form-group">
+                  <label for="etarDate">EndDate </label>
+                  <input type = "date" class="form-control" id="endDate" required 
+                  [(ngModel)]="model.endDate" name="endDate">
+         
+                  </div>
+
+              
+              
+                  <button type="submitt" class ="btn-btn-success">Submitt</button>
+      <button type="save" class ="btn-btn-success">Save</button>
+      <button type="cancel" class ="btn-btn-success">Cancel</button>
+   
+    </form>
+</div>
+
+
